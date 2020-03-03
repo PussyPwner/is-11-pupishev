@@ -1,0 +1,108 @@
+
+#head{
+    background-image: url(https://avatars.mds.yandex.net/get-pdb/1811947/118dfddc-d635-45d4-b6b3-4b0216740b7e/s1200);
+    max-width: 100%;
+    position: relative;
+    text-align: center;
+    text-shadow: rgb(82, 21, 34) 0 0 3px;
+    color: white;
+    font-size: 37px;
+    padding: 18px;
+}
+#footer{
+	background-color: aquamarine;
+	max-width: 100%;
+	position: relative;
+	text-align: center;
+	text-shadow: rgb(82, 21, 34) 0 0 3px;
+	color: white;
+	font-size: 37px;
+	padding: 18px; 
+	margin-top: 0;
+}
+#equal{
+	visibility: hidden;
+	position: relative;
+	display: inline;
+}
+#minipuncts{
+	visibility: hidden;
+	position: relative;
+	display: inline;
+}
+@media screen and (min-width: 1000px){
+	.punny{
+		position: relative;
+		text-align: center;
+		background-color: rgb(30, 33, 210);
+		padding: 30px;
+		border: 3px double red;
+	}
+	#puncts{
+		display: grid;
+		grid-template-columns: 20% 80%;
+		grid-template-rows: 30% 30% 30%;
+	}
+	#body{
+		grid-column-start: 2;
+		grid-column-end: 3;
+		grid-row-start: 1;
+		grid-row-end: 4;
+		display: grid;
+		position: relative;
+		text-align: center;
+		background-color: rgba(158, 58, 58, 0.829);
+	}
+}
+@media screen and (min-width: 500px) and (max-width: 999px){
+	.punny{
+		position: relative;
+		text-align: center;
+		background-color: rgb(30, 33, 210);
+		padding: 30px;
+		border: 3px double red;
+	}
+	#puncts{
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+		grid-template-rows: 1fr 3fr;
+	}
+	#body{
+		grid-column-start: 1;
+		grid-column-end: 4;
+		grid-row-start: 2;
+		grid-row-end: 3;
+		display: grid;
+		position: relative;
+		text-align: center;
+		background-color: rgba(158, 58, 58, 0.829);
+	}
+}	
+
+body{
+    margin: 0; 
+}
+@media screen and (max-width: 500px){
+	.punny{
+		visibility: hidden;	
+	}
+	#equal{
+		font-size:30px;
+		visibility: visible;
+		position: relative;
+		display: block;
+		margin-top: -190px;
+		margin-left: 20px;
+		width: 150px;
+	}
+	#equal span{
+		background-color:pink;
+		padding-left:10px;
+		padding-right:10px;
+	}
+	#equal:hover table{
+		font-size: 16px;
+		margin-top: -10px;
+		visibility: visible;
+	}
+}
